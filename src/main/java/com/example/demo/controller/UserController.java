@@ -16,12 +16,10 @@ public class UserController {
         this.userService = userService;
     }
 
-
     @GetMapping("/")
     public String getTest() {
         return "success";
     }
-
 
     @GetMapping("/user/{id}")
     public String read(@PathVariable Long id) {
